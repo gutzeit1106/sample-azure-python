@@ -6,8 +6,8 @@ from azure.mgmt.network import NetworkManagementClient
 
 #Parameter
 GROUP_NAME = 'MyResourceGroup'
-NIC_NAME = 'ipconfig1'
-PRIVATE_IPADDRESS = '192.168.10.14'
+NIC_NAME = 'MyNic'
+PRIVATE_IPADDRESS = '192.168.10.14' #New Private IP
 
 def get_credentials():
     subscription_id = os.environ['AZURE_SUBSCRIPTION_ID']
