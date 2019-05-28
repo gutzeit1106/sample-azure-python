@@ -6,11 +6,11 @@ from azure.mgmt.network import NetworkManagementClient
 
 #Parameter
 LOCATION = 'japaneast'
-GROUP_NAME = 'AKSWinExam'
+GROUP_NAME = 'MyResourceGroup'
 IP_CONFIG_NAME = 'ipconfig1'
 NIC_NAME = 'MyNIC'
-privateIPAddress = '10.0.0.11'
-SUBNET_ID = '/subscriptions/5274a85f-780e-4e5e-8934-7956d5a76cf8/resourceGroups/AKSWinExam/providers/Microsoft.Network/virtualNetworks/MyVirtualNet/subnets/MySubnet'
+PRIVATE_IPADDRESS = '10.0.0.12'
+SUBNET_ID = '/subscriptions/xxxx/resourceGroups/MyResourceGroup/providers/Microsoft.Network/virtualNetworks/MyVnet/subnets/Mysubnet'
 
 
 def get_credentials():
@@ -39,7 +39,7 @@ def run_example():
             'ip_configurations': [{
                 'name': IP_CONFIG_NAME,
                 "properties": {
-                    "privateIPAddress": privateIPAddress,
+                    "privateIPAddress": PRIVATE_IPADDRESS,
                     "privateIPAllocationMethod": "Static",
                      'subnet': {
                         'id': SUBNET_ID
