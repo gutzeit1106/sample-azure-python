@@ -5,9 +5,9 @@ from azure.common.credentials import ServicePrincipalCredentials
 from azure.mgmt.network import NetworkManagementClient
 
 #Parameter
-GROUP_NAME = 'MyResourceGroup'
-NIC_NAME = 'MyNic'
-PRIVATE_IPADDRESS = '192.168.10.14' #New Private IP
+GROUP_NAME = 'SpotVM'
+NIC_NAME = 'spotvmre462'
+PRIVATE_IPADDRESS = '192.168.4.6' #New Private IP
 
 def get_credentials():
     subscription_id = os.environ['AZURE_SUBSCRIPTION_ID']
