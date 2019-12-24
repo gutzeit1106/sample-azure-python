@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"python.pythonPath": "./azuresdkenv/bin/python",
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.pythonPath": "azuresdkenv/bin/python3"
+	}
+}
